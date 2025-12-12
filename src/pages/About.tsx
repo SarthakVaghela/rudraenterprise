@@ -2,13 +2,21 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Award, 
-  Users, 
   Clock, 
   CheckCircle, 
   Shield, 
   Wrench,
   Heart,
-  Target
+  Target,
+  Eye,
+  Rocket,
+  Lightbulb,
+  Handshake,
+  Sparkles,
+  ThumbsUp,
+  Zap,
+  HeadphonesIcon,
+  BadgeCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
@@ -28,40 +36,47 @@ const staggerContainer = {
   },
 };
 
-const whyChooseUs = [
+const missionPoints = [
+  "Provide fast, dependable, and transparent tech services customers can rely on.",
+  "Upgrade and secure homes and businesses with modern IT and surveillance solutions.",
+  "Maintain long-term relationships through exceptional service and ethical practices.",
+  "Continuously evolve with new technologies to deliver simple, safe, effective solutions.",
+];
+
+const ourValues = [
   {
-    icon: Award,
-    title: "Certified Technicians",
-    description: "Trained professionals with transparent fixes and honest pricing.",
+    icon: Handshake,
+    title: "Integrity",
+    description: "Honest pricing, honest work, honest communication.",
   },
   {
     icon: Shield,
-    title: "Warranty & Trust",
-    description: "Fix it or don't pay promise — 30-day warranty on all repairs.",
+    title: "Reliability",
+    description: "30-day service warranty; if it's not fixed, you don't pay.",
   },
   {
-    icon: Clock,
-    title: "Local & Fast",
-    description: "Walk-in support and on-site service for your convenience.",
+    icon: Award,
+    title: "Expertise",
+    description: "Certified tools, real technical skill, updated knowledge.",
   },
-];
-
-const values = [
   {
     icon: Heart,
     title: "Customer First",
-    description: "Your satisfaction is our top priority. We listen, understand, and deliver.",
+    description: "Careful, patient handling of every device.",
   },
   {
-    icon: Target,
-    title: "Quality Work",
-    description: "We use genuine parts and follow industry best practices.",
+    icon: Lightbulb,
+    title: "Innovation",
+    description: "Modern solutions for everyday tech needs.",
   },
-  {
-    icon: Wrench,
-    title: "Expert Solutions",
-    description: "Complex problems need expert solutions. We've got the skills.",
-  },
+];
+
+const whyChooseUsPoints = [
+  { icon: Zap, text: "Clean and fast workmanship" },
+  { icon: Eye, text: "Clear diagnosis & repair explanations" },
+  { icon: HeadphonesIcon, text: "Walk-in and on-site support" },
+  { icon: BadgeCheck, text: "Quality components & trusted brands" },
+  { icon: ThumbsUp, text: "Friendly service backed by expertise" },
 ];
 
 const milestones = [
@@ -178,7 +193,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      {/* Vision & Mission Section */}
       <section className="section-padding bg-background">
         <div className="container mx-auto container-padding">
           <motion.div
@@ -189,36 +204,62 @@ const About = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Why Choose Us?
+              Vision & Mission
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're not just another repair shop — we're your technology partners.
-            </p>
           </motion.div>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-8"
-          >
-            {whyChooseUs.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="text-center p-8 rounded-2xl bg-gradient-card border border-border card-lift"
-              >
-                <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-6">
-                  <item.icon className="w-8 h-8 text-gold" />
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Vision Card */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-8 rounded-2xl bg-gradient-card border-2 border-gold/30 relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center mb-6">
+                  <Eye className="w-7 h-7 text-gold" />
                 </div>
-                <h3 className="text-xl font-montserrat font-bold text-foreground mb-3">
-                  {item.title}
+                <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">
+                  Our Vision
                 </h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </motion.div>
-            ))}
-          </motion.div>
+                <p className="text-muted-foreground leading-relaxed">
+                  "To become the most trusted and accessible technology service partner for every 
+                  home and business — delivering repair, security, and digital solutions with 
+                  unmatched quality and honesty."
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Mission Card */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="p-8 rounded-2xl bg-gradient-card border-2 border-gold/30 relative overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center mb-6">
+                  <Rocket className="w-7 h-7 text-gold" />
+                </div>
+                <h3 className="text-2xl font-montserrat font-bold text-foreground mb-4">
+                  Our Mission
+                </h3>
+                <ul className="space-y-3">
+                  {missionPoints.map((point, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -245,25 +286,70 @@ const About = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={staggerContainer}
-            className="grid md:grid-cols-3 gap-8"
+            className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6"
           >
-            {values.map((value, index) => (
+            {ourValues.map((value, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="flex items-start gap-4 p-6 rounded-xl bg-gradient-card border border-border"
+                className="p-6 rounded-2xl bg-gradient-card border-2 border-gold/20 hover:border-gold/40 transition-colors text-center card-lift"
               >
-                <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center flex-shrink-0">
-                  <value.icon className="w-6 h-6 text-gold" />
+                <div className="w-14 h-14 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="w-7 h-7 text-gold" />
                 </div>
-                <div>
-                  <h3 className="text-lg font-montserrat font-bold text-foreground mb-2">
-                    {value.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">{value.description}</p>
-                </div>
+                <h3 className="text-lg font-montserrat font-bold text-foreground mb-2">
+                  {value.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">{value.description}</p>
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="section-padding bg-gradient-to-br from-gold/10 via-gold/5 to-transparent">
+        <div className="container mx-auto container-padding">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeInUp}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
+              Why Choose Us?
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              We're not just another repair shop — we're your technology partners.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-3xl mx-auto"
+          >
+            <div className="p-8 md:p-10 rounded-2xl bg-gradient-card border border-gold/30 shadow-lg">
+              <ul className="space-y-5">
+                {whyChooseUsPoints.map((item, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center gap-4"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-5 h-5 text-gold" />
+                    </div>
+                    <span className="text-lg text-foreground">{item.text}</span>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         </div>
       </section>
