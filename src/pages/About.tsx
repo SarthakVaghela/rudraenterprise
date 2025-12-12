@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Award, 
-  Clock, 
   CheckCircle, 
   Shield, 
-  Wrench,
   Heart,
   Eye,
   Rocket,
@@ -18,16 +16,6 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
-import TechStorySection from "@/components/about/TechStorySection";
-import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
-import DeepDiagnosticsSection from "@/components/about/DeepDiagnosticsSection";
-import BeforeAfterSlider from "@/components/about/BeforeAfterSlider";
-import BusinessSection from "@/components/about/BusinessSection";
-import TransparencySection from "@/components/about/TransparencySection";
-import SustainabilitySection from "@/components/about/SustainabilitySection";
-import TechnicianSection from "@/components/about/TechnicianSection";
-import OptimizationSection from "@/components/about/OptimizationSection";
-import LocalTrustSection from "@/components/about/LocalTrustSection";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -361,18 +349,6 @@ const About = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* New Sections */}
-      <TechStorySection />
-      <TroubleshootingWizard />
-      <DeepDiagnosticsSection />
-      <BeforeAfterSlider />
-      <BusinessSection />
-      <TransparencySection />
-      <SustainabilitySection />
-      <TechnicianSection />
-      <OptimizationSection />
-      <LocalTrustSection />
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-gold/10 via-gold/5 to-gold/10 border-y border-gold/20">
