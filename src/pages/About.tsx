@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import LocalTrustSection from "@/components/about/LocalTrustSection";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -188,6 +189,9 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Local Trust Section */}
+      <LocalTrustSection />
 
       {/* Vision & Mission Section */}
       <section className="section-padding bg-background">
