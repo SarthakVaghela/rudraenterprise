@@ -242,10 +242,10 @@ const Index = () => {
             className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6"
           >
             {services.map((service, index) => (
-              <motion.div key={index} variants={fadeInUp}>
+              <motion.div key={index} variants={fadeInUp} className="h-full">
                 <Link
                   to={service.link}
-                  className="group block p-6 bg-gradient-card rounded-xl border border-border hover:border-gold/50 card-lift"
+                  className="group flex flex-col h-full p-6 bg-gradient-card rounded-xl border border-border hover:border-gold/50 card-lift"
                 >
                   <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                     <service.icon className="w-6 h-6 text-gold" />
@@ -253,7 +253,7 @@ const Index = () => {
                   <h3 className="font-montserrat font-semibold text-foreground mb-2 group-hover:text-gold transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                  <p className="text-sm text-muted-foreground flex-grow">{service.description}</p>
                 </Link>
               </motion.div>
             ))}
