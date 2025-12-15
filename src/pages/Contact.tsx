@@ -286,23 +286,6 @@ const Contact = () => {
                       </SelectContent>
                     </Select>
                   </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Preferred Visit
-                    </label>
-                    <Select
-                      value={formData.visitType}
-                      onValueChange={(value) => setFormData({ ...formData, visitType: value })}
-                    >
-                      <SelectTrigger className="bg-card border-border">
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="walk-in">Walk-in</SelectItem>
-                        <SelectItem value="on-site">On-site Visit</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
                 </div>
 
                 <div>
