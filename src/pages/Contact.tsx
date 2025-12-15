@@ -113,24 +113,49 @@ const Contact = () => {
 
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Message sent!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      serviceType: "",
-      visitType: "walk-in",
-      message: "",
-      consent: false,
-    });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxaZiF5Ztkkv6VHlrjGt6MJqtdNVLWvo4rfuYm4Oiev4XtHiusi8yFr4x99g7ESEr5B/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            phone: formData.phone,
+            email: formData.email,
+            serviceType: formData.serviceType,
+            visitType: formData.visitType,
+            message: formData.message,
+          }),
+          mode: "no-cors",
+        }
+      );
+      
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you within 24 hours.",
+      });
+      
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        serviceType: "",
+        visitType: "walk-in",
+        message: "",
+        consent: false,
+      });
+    } catch (error) {
+      toast({
+        title: "Error sending message",
+        description: "Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
