@@ -179,13 +179,13 @@ const Contact = () => {
             className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {contactInfo.map((info, index) => (
-              <motion.div key={index} variants={fadeInUp}>
+              <motion.div key={index} variants={fadeInUp} className="h-full">
                 {info.link ? (
                   <a
                     href={info.link}
                     target={info.link.startsWith("http") ? "_blank" : undefined}
                     rel={info.link.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="block p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 transition-all group"
+                    className="block h-full p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 transition-all group"
                   >
                     <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                       <info.icon className="w-6 h-6 text-gold" />
@@ -194,7 +194,7 @@ const Contact = () => {
                     <p className="text-sm text-muted-foreground">{info.content}</p>
                   </a>
                 ) : (
-                  <div className="p-6 rounded-xl bg-gradient-card border border-border">
+                  <div className="h-full p-6 rounded-xl bg-gradient-card border border-border">
                     <div className="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-4">
                       <info.icon className="w-6 h-6 text-gold" />
                     </div>
