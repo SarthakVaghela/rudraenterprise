@@ -179,41 +179,41 @@ const servicesSchema = [
     name: "Laptop Repair in Ahmedabad",
     description: "Professional laptop repair services including screen replacement, battery replacement, keyboard repair, motherboard repair, and SSD upgrades. Same-day service available.",
     price: "500",
-    url: "https://raxondigital.in/services#laptop"
+    url: "https://rudraenterprise.in/services#laptop"
   }),
   createServiceSchema({
     name: "Desktop Computer Repair in Ahmedabad",
     description: "Complete desktop repair solutions from diagnosis to component replacement and custom builds. Fast turnaround with 30-day warranty.",
     price: "400",
-    url: "https://raxondigital.in/services#desktop"
+    url: "https://rudraenterprise.in/services#desktop"
   }),
   createServiceSchema({
     name: "Data Recovery Services in Ahmedabad",
     description: "Professional data recovery from damaged hard drives, SSDs, and RAID systems. Cloud backup setup and encrypted drive access.",
     price: "1000",
-    url: "https://raxondigital.in/services#data-recovery"
+    url: "https://rudraenterprise.in/services#data-recovery"
   }),
   createServiceSchema({
     name: "CCTV Installation in Ahmedabad",
     description: "Expert CCTV camera installation, DVR/NVR setup, remote viewing configuration, and maintenance contracts for homes and businesses.",
-    url: "https://raxondigital.in/services#cctv"
+    url: "https://rudraenterprise.in/services#cctv"
   }),
   createServiceSchema({
     name: "Virus and Malware Removal in Ahmedabad",
     description: "Complete virus removal, malware cleanup, ransomware recovery, and antivirus installation with system optimization.",
     price: "600",
-    url: "https://raxondigital.in/services#antivirus"
+    url: "https://rudraenterprise.in/services#antivirus"
   }),
   createServiceSchema({
     name: "Networking Services in Ahmedabad",
     description: "Wi-Fi optimization, router configuration, network security, server setup, and VPN configuration for homes and businesses.",
     price: "800",
-    url: "https://raxondigital.in/services#networking"
+    url: "https://rudraenterprise.in/services#networking"
   }),
   createServiceSchema({
     name: "Biometric Attendance Systems in Ahmedabad",
     description: "Fingerprint and face recognition attendance systems installation and maintenance for offices and businesses.",
-    url: "https://raxondigital.in/services#biometric"
+    url: "https://rudraenterprise.in/services#biometric"
   }),
   createFAQSchema([
     { question: "How long does laptop repair take?", answer: "Most laptop repairs are completed within 24-48 hours. Same-day service is available for common issues like screen replacement and virus removal." },
@@ -227,7 +227,7 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="Computer Repair & CCTV Services in Ahmedabad | Raxon Digital"
+        title="Computer Repair & CCTV Services in Ahmedabad | Rudra Enterprise"
         description="Professional laptop repair, desktop repair, CCTV installation, data recovery, virus removal & networking services in Ahmedabad. Starting ₹400. 30-day warranty. Call +91 94263 22123."
         canonical="/services"
         schema={servicesSchema}

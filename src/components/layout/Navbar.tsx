@@ -42,14 +42,14 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold to-gold-light flex items-center justify-center font-montserrat font-bold text-background text-lg transition-transform group-hover:scale-110">
-              RD
+              RE
             </div>
             <div className="flex flex-col">
               <span className="font-montserrat font-bold text-lg text-foreground leading-tight">
-                Raxon
+                Rudra
               </span>
               <span className="text-gold text-xs font-medium tracking-wider uppercase">
-                Digital
+                Enterprise
               </span>
             </div>
           </Link>

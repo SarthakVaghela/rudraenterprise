@@ -41,7 +41,7 @@ const LocalTrustSection = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Raxon Digital Location"
+              title="Rudra Enterprise Location"
             />
           </motion.div>
 

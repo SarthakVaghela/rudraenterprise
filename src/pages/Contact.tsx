@@ -49,8 +49,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    content: "info@raxondigital.in",
-    link: "mailto:info@raxondigital.in",
+    content: "info@rudraenterprise.in",
+    link: "mailto:info@rudraenterprise.in",
   },
   {
     icon: Clock,
@@ -97,9 +97,9 @@ const contactSchema = [
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Raxon Digital - Computer Repair in Ahmedabad",
-    "description": "Contact Raxon Digital for computer repair, laptop repair, CCTV installation, and IT services in Ahmedabad. Visit our shop in Vejalpur or call +91 94263 22123.",
-    "url": "https://raxondigital.in/contact"
+    "name": "Contact Rudra Enterprise - Computer Repair in Ahmedabad",
+    "description": "Contact Rudra Enterprise for computer repair, laptop repair, CCTV installation, and IT services in Ahmedabad. Visit our shop in Vejalpur or call +91 94263 22123.",
+    "url": "https://rudraenterprise.in/contact"
   }
 ];
 
@@ -178,8 +178,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us - Computer Repair Shop in Vejalpur, Ahmedabad | Raxon Digital"
-        description="Contact Raxon Digital for laptop repair, CCTV installation & IT services in Ahmedabad. Visit: A-238, Shreyash Complex, Vejalpur. Call: +91 94263 22123. Mon-Sat 10AM-7PM."
+        title="Contact Us - Computer Repair Shop in Vejalpur, Ahmedabad | Rudra Enterprise"
+        description="Contact Rudra Enterprise for laptop repair, CCTV installation & IT services in Ahmedabad. Visit: A-238, Shreyash Complex, Vejalpur. Call: +91 94263 22123. Mon-Sat 10AM-7PM."
         canonical="/contact"
         schema={contactSchema}
       />
@@ -204,7 +204,7 @@ const Contact = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Contact Raxon Digital in{" "}
+              Contact Rudra Enterprise in{" "}
               <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
@@ -398,7 +398,7 @@ const Contact = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Raxon Digital Location"
+                    title="Rudra Enterprise Location"
                   />
                 </div>
               </div>
