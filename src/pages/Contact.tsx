@@ -16,6 +16,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
 import Layout from "@/components/layout/Layout";
+import SEO, { localBusinessSchema, breadcrumbSchema, createFAQSchema } from "@/components/SEO";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -84,6 +85,22 @@ const faqs = [
     question: "What's covered under warranty?",
     answer: "All repairs come with a 30-day warranty covering parts and labor. If the same issue recurs, we'll fix it for free.",
   },
+];
+
+const contactSchema = [
+  localBusinessSchema,
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Contact", url: "/contact" }
+  ]),
+  createFAQSchema(faqs),
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Raxon Digital - Computer Repair in Ahmedabad",
+    "description": "Contact Raxon Digital for computer repair, laptop repair, CCTV installation, and IT services in Ahmedabad. Visit our shop in Vejalpur or call +91 94263 22123.",
+    "url": "https://raxondigital.in/contact"
+  }
 ];
 
 const Contact = () => {
@@ -160,6 +177,13 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact Us - Computer Repair Shop in Vejalpur, Ahmedabad | Raxon Digital"
+        description="Contact Raxon Digital for laptop repair, CCTV installation & IT services in Ahmedabad. Visit: A-238, Shreyash Complex, Vejalpur. Call: +91 94263 22123. Mon-Sat 10AM-7PM."
+        canonical="/contact"
+        schema={contactSchema}
+      />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-midnight relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
@@ -180,8 +204,8 @@ const Contact = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Get in Touch{" "}
-              <span className="text-gradient-gold">With Us</span>
+              Contact Raxon Digital in{" "}
+              <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
