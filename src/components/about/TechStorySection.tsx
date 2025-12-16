@@ -29,7 +29,7 @@ const TechStorySection = () => {
               a business system running day and night.
             </p>
             <p>
-              At Raxon Digital, we restore the speed, stability, and security that modern life depends on.
+              At Rudra Enterprise, we restore the speed, stability, and security that modern life depends on.
             </p>
             <p className="text-foreground font-medium">
               Because when your tech works flawlessly, you work flawlessly.

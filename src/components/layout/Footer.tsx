@@ -34,19 +34,19 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold to-gold-light flex items-center justify-center font-montserrat font-bold text-background text-lg">
-                RD
+                RE
               </div>
               <div className="flex flex-col">
                 <span className="font-montserrat font-bold text-lg text-foreground leading-tight">
-                  Raxon
+                  Rudra
                 </span>
                 <span className="text-gold text-xs font-medium tracking-wider uppercase">
-                  Digital
+                  Enterprise
                 </span>
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Raxon Digital — Fast, local tech services you can trust. Repair. Secure. Restore.
+              Rudra Enterprise — Fast, local tech services you can trust. Repair. Secure. Restore.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -145,11 +145,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@raxondigital.in"
+                  href="mailto:info@rudraenterprise.in"
                   className="flex items-center gap-3 text-muted-foreground text-sm hover:text-gold transition-colors"
                 >
                   <Mail className="w-4 h-4 text-gold flex-shrink-0" />
-                  <span>info@raxondigital.in</span>
+                  <span>info@rudraenterprise.in</span>
                 </a>
               </li>
             </ul>
@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-muted-foreground text-sm text-center md:text-left">
-              © {currentYear} Raxon Digital. All rights reserved.
+              © {currentYear} Rudra Enterprise. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
               {legalLinks.map((link) => (
