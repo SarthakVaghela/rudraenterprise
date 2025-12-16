@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import SEO, { createServiceSchema, breadcrumbSchema, createFAQSchema } from "@/components/SEO";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -169,9 +170,69 @@ const services = [
   },
 ];
 
+const servicesSchema = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Services", url: "/services" }
+  ]),
+  createServiceSchema({
+    name: "Laptop Repair in Ahmedabad",
+    description: "Professional laptop repair services including screen replacement, battery replacement, keyboard repair, motherboard repair, and SSD upgrades. Same-day service available.",
+    price: "500",
+    url: "https://raxondigital.in/services#laptop"
+  }),
+  createServiceSchema({
+    name: "Desktop Computer Repair in Ahmedabad",
+    description: "Complete desktop repair solutions from diagnosis to component replacement and custom builds. Fast turnaround with 30-day warranty.",
+    price: "400",
+    url: "https://raxondigital.in/services#desktop"
+  }),
+  createServiceSchema({
+    name: "Data Recovery Services in Ahmedabad",
+    description: "Professional data recovery from damaged hard drives, SSDs, and RAID systems. Cloud backup setup and encrypted drive access.",
+    price: "1000",
+    url: "https://raxondigital.in/services#data-recovery"
+  }),
+  createServiceSchema({
+    name: "CCTV Installation in Ahmedabad",
+    description: "Expert CCTV camera installation, DVR/NVR setup, remote viewing configuration, and maintenance contracts for homes and businesses.",
+    url: "https://raxondigital.in/services#cctv"
+  }),
+  createServiceSchema({
+    name: "Virus and Malware Removal in Ahmedabad",
+    description: "Complete virus removal, malware cleanup, ransomware recovery, and antivirus installation with system optimization.",
+    price: "600",
+    url: "https://raxondigital.in/services#antivirus"
+  }),
+  createServiceSchema({
+    name: "Networking Services in Ahmedabad",
+    description: "Wi-Fi optimization, router configuration, network security, server setup, and VPN configuration for homes and businesses.",
+    price: "800",
+    url: "https://raxondigital.in/services#networking"
+  }),
+  createServiceSchema({
+    name: "Biometric Attendance Systems in Ahmedabad",
+    description: "Fingerprint and face recognition attendance systems installation and maintenance for offices and businesses.",
+    url: "https://raxondigital.in/services#biometric"
+  }),
+  createFAQSchema([
+    { question: "How long does laptop repair take?", answer: "Most laptop repairs are completed within 24-48 hours. Same-day service is available for common issues like screen replacement and virus removal." },
+    { question: "Do you provide on-site repair services?", answer: "Yes, we offer on-site repair services for CCTV installation, networking setup, and select repair services throughout Ahmedabad." },
+    { question: "What warranty do you provide?", answer: "All our repairs come with a 30-day warranty covering parts and labor. If the same issue recurs, we'll fix it for free." },
+    { question: "What areas do you serve in Ahmedabad?", answer: "We serve all areas of Ahmedabad including Vejalpur, Jodhpur, Satellite, Vastrapur, Bopal, and surrounding localities." }
+  ])
+];
+
 const Services = () => {
   return (
     <Layout>
+      <SEO
+        title="Computer Repair & CCTV Services in Ahmedabad | Raxon Digital"
+        description="Professional laptop repair, desktop repair, CCTV installation, data recovery, virus removal & networking services in Ahmedabad. Starting ₹400. 30-day warranty. Call +91 94263 22123."
+        canonical="/services"
+        schema={servicesSchema}
+      />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-midnight relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
@@ -192,8 +253,8 @@ const Services = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Complete Tech Solutions for{" "}
-              <span className="text-gradient-gold">Home & Business</span>
+              Computer Repair & IT Services in{" "}
+              <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
@@ -250,10 +311,10 @@ const Services = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Service Details
+              Computer & Laptop Repair Services in Ahmedabad
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Click on any service above to scroll to detailed information.
+              Detailed information about our repair and IT services with transparent pricing.
             </p>
           </motion.div>
 
@@ -324,10 +385,10 @@ const Services = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Our Process
+              How We Repair Your Device
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Simple, transparent, and efficient.
+              Our 3-step repair process: Diagnose, Repair, and Test — all with 30-day warranty coverage.
             </p>
           </motion.div>
 

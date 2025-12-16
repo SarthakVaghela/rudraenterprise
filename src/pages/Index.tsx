@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import SEO, { localBusinessSchema, createServiceSchema } from "@/components/SEO";
 import heroImage from "@/assets/hero-technician.jpg";
 import TechStorySection from "@/components/about/TechStorySection";
 import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
@@ -125,9 +126,41 @@ const featuredServices = [
   },
 ];
 
+const homeSchema = [
+  localBusinessSchema,
+  createServiceSchema({
+    name: "Computer Repair Services in Ahmedabad",
+    description: "Professional laptop repair, desktop repair, data recovery, virus removal, and hardware upgrades in Ahmedabad. Same-day service with 30-day warranty.",
+    url: "https://raxondigital.in/services"
+  }),
+  createServiceSchema({
+    name: "CCTV Installation in Ahmedabad",
+    description: "Expert CCTV camera installation, DVR setup, and security system solutions for homes and businesses in Ahmedabad, Vejalpur, and nearby areas.",
+    url: "https://raxondigital.in/services#cctv"
+  }),
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Raxon Digital",
+    "url": "https://raxondigital.in",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://raxondigital.in/shop?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+];
+
 const Index = () => {
   return (
     <Layout>
+      <SEO
+        title="Computer Repair & CCTV Installation in Ahmedabad | Raxon Digital"
+        description="Trusted computer repair, laptop repair, CCTV installation & data recovery in Ahmedabad. 5000+ devices repaired, 30-day warranty. Visit us in Vejalpur or call +91 94263 22123."
+        canonical="/"
+        schema={homeSchema}
+      />
+      
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Background */}
@@ -153,8 +186,8 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-foreground leading-tight mb-6"
               >
-                Raxon Digital —{" "}
-                <span className="text-gradient-gold">Repair. Secure. Restore.</span>
+                Computer Repair & CCTV Installation in{" "}
+                <span className="text-gradient-gold">Ahmedabad</span>
               </motion.h1>
               
               <motion.p
@@ -301,10 +334,10 @@ const Index = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Our Featured Services
+              Professional Repair & Security Services in Ahmedabad
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              From quick repairs to complete security installations, we've got you covered.
+              Expert laptop repair, CCTV installation, and IT solutions for homes and businesses across Ahmedabad.
             </p>
           </motion.div>
 
@@ -363,10 +396,10 @@ const Index = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              What Our Customers Say
+              Trusted by Ahmedabad Businesses & Homes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Don't just take our word for it — hear from our satisfied customers.
+              Join 5,000+ satisfied customers who trust Raxon Digital for computer repair and security solutions.
             </p>
           </motion.div>
 

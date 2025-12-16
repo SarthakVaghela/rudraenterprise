@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
+import SEO, { localBusinessSchema, breadcrumbSchema } from "@/components/SEO";
 import LocalTrustSection from "@/components/about/LocalTrustSection";
 
 const fadeInUp = {
@@ -84,9 +85,35 @@ const milestones = [
   { year: "2023", event: "5000+ Happy Customers" },
 ];
 
+const aboutSchema = [
+  localBusinessSchema,
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "About Us", url: "/about" }
+  ]),
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Raxon Digital - Computer Repair Experts in Ahmedabad",
+    "description": "Learn about Raxon Digital, Ahmedabad's trusted computer repair and CCTV installation company. 8+ years experience, 5000+ devices repaired, certified technicians.",
+    "url": "https://raxondigital.in/about",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://raxondigital.in/#business"
+    }
+  }
+];
+
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="About Us - Trusted Computer Repair in Ahmedabad Since 2015 | Raxon Digital"
+        description="Raxon Digital has served Ahmedabad for 8+ years with expert laptop repair, CCTV installation & data recovery. 5000+ devices repaired. Meet our certified technicians in Vejalpur."
+        canonical="/about"
+        schema={aboutSchema}
+      />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-midnight relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
@@ -107,7 +134,7 @@ const About = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Trusted Tech Solutions Since{" "}
+              Ahmedabad's Trusted Computer Repair Experts Since{" "}
               <span className="text-gradient-gold">2015</span>
             </motion.h1>
             <motion.p

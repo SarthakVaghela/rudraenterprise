@@ -5,6 +5,7 @@ import { ShoppingCart, Eye, Filter, Search, Camera, Fingerprint, Cpu, Monitor, A
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Layout from "@/components/layout/Layout";
+import SEO, { createProductSchema, breadcrumbSchema } from "@/components/SEO";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -156,6 +157,35 @@ const products = [
   },
 ];
 
+const shopSchema = [
+  breadcrumbSchema([
+    { name: "Home", url: "/" },
+    { name: "Shop", url: "/shop" }
+  ]),
+  ...products.slice(0, 6).map(product => createProductSchema({
+    name: product.name,
+    description: product.specs,
+    price: product.price,
+    availability: product.inStock
+  })),
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Raxon Digital Shop",
+    "description": "Buy CCTV cameras, biometric systems, RAM, SSD, and computer peripherals in Ahmedabad. Quality hardware with installation service available.",
+    "url": "https://raxondigital.in/shop",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "A-238, Shreyash Complex, Near Vejalpur Bus Stand",
+      "addressLocality": "Vejalpur",
+      "addressRegion": "Ahmedabad",
+      "postalCode": "380051",
+      "addressCountry": "IN"
+    },
+    "telephone": "+919426322123"
+  }
+];
+
 const Shop = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
@@ -176,6 +206,13 @@ const Shop = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Buy CCTV Cameras, RAM, SSD & Computer Hardware in Ahmedabad | Raxon Digital"
+        description="Shop quality CCTV cameras, biometric systems, RAM, SSD, and computer peripherals in Ahmedabad. Local pickup available. Professional installation. Manufacturer warranty included."
+        canonical="/shop"
+        schema={shopSchema}
+      />
+      
       {/* Hero Section */}
       <section className="pt-32 pb-16 bg-gradient-midnight relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
@@ -196,8 +233,8 @@ const Shop = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Quality Hardware &{" "}
-              <span className="text-gradient-gold">Security Products</span>
+              Computer Hardware & CCTV Products in{" "}
+              <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
