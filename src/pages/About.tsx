@@ -78,7 +78,7 @@ const whyChooseUsPoints = [
 ];
 
 const milestones = [
-  { year: "2015", event: "Founded Rudra Enterprise" },
+  { year: "2015", event: "Founded Raxon Digital" },
   { year: "2017", event: "Expanded to CCTV Services" },
   { year: "2019", event: "1000+ Devices Repaired" },
   { year: "2021", event: "Added Biometric Systems" },
@@ -94,12 +94,12 @@ const aboutSchema = [
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About Rudra Enterprise - Computer Repair Experts in Ahmedabad",
-    "description": "Learn about Rudra Enterprise, Ahmedabad's trusted computer repair and CCTV installation company. 8+ years experience, 5000+ devices repaired, certified technicians.",
-    "url": "https://rudraenterprise.in/about",
+    "name": "About Raxon Digital - Computer Repair Experts in Ahmedabad",
+    "description": "Learn about Raxon Digital, Ahmedabad's trusted computer repair and CCTV installation company. 8+ years experience, 5000+ devices repaired, certified technicians.",
+    "url": "https://raxondigital.in/about",
     "mainEntity": {
       "@type": "LocalBusiness",
-      "@id": "https://rudraenterprise.in/#business"
+      "@id": "https://raxondigital.in/#business"
     }
   }
 ];
@@ -108,8 +108,8 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About Us - Trusted Computer Repair in Ahmedabad Since 2015 | Rudra Enterprise"
-        description="Rudra Enterprise has served Ahmedabad for 8+ years with expert laptop repair, CCTV installation & data recovery. 5000+ devices repaired. Meet our certified technicians in Vejalpur."
+        title="About Us - Trusted Computer Repair in Ahmedabad Since 2015 | Raxon Digital"
+        description="Raxon Digital has served Ahmedabad for 8+ years with expert laptop repair, CCTV installation & data recovery. 5000+ devices repaired. Meet our certified technicians in Vejalpur."
         canonical="/about"
         schema={aboutSchema}
       />
@@ -162,7 +162,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Rudra Enterprise has provided reliable computer repair and security services 
+                  Raxon Digital has provided reliable computer repair and security services 
                   in Ahmedabad for over 8 years. What started as a small repair shop has 
                   grown into a full-service technology solutions provider.
                 </p>
@@ -391,7 +391,7 @@ const About = () => {
             variants={fadeInUp}
           >
             <h2 className="text-2xl md:text-3xl font-montserrat font-bold text-foreground mb-4">
-              Ready to experience the Rudra difference?
+              Ready to experience the Raxon difference?
             </h2>
             <p className="text-muted-foreground mb-6">
               Get in touch today for a free consultation.

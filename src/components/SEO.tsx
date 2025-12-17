@@ -17,7 +17,7 @@ const SEO = ({
   image = "https://lovable.dev/opengraph-image-p98pqg.png",
   schema
 }: SEOProps) => {
-  const siteUrl = "https://rudraenterprise.in";
+  const siteUrl = "https://raxondigital.in";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
   return (
@@ -32,7 +32,7 @@ const SEO = ({
       <meta property="og:type" content={type} />
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:image" content={image} />
-      <meta property="og:site_name" content="Rudra Enterprise" />
+      <meta property="og:site_name" content="Raxon Digital" />
       <meta property="og:locale" content="en_IN" />
       
       {/* Twitter */}
@@ -63,11 +63,11 @@ export default SEO;
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://rudraenterprise.in/#business",
-  "name": "Rudra Enterprise",
-  "alternateName": "Rudra Enterprise Computer Repair",
+  "@id": "https://raxondigital.in/#business",
+  "name": "Raxon Digital",
+  "alternateName": "Raxon Digital Computer Repair",
   "description": "Professional computer repair, laptop repair, CCTV installation, data recovery, and IT services in Ahmedabad, Gujarat. Serving Vejalpur, Jodhpur, Satellite, and nearby areas.",
-  "url": "https://rudraenterprise.in",
+  "url": "https://raxondigital.in",
   "telephone": "+919426322123",
   "email": "info@raxondigital.in",
   "address": {
@@ -126,8 +126,8 @@ export const createServiceSchema = (service: {
   "description": service.description,
   "provider": {
     "@type": "LocalBusiness",
-    "name": "Rudra Enterprise",
-    "@id": "https://rudraenterprise.in/#business"
+    "name": "Raxon Digital",
+    "@id": "https://raxondigital.in/#business"
   },
   "areaServed": {
     "@type": "City",
@@ -177,7 +177,7 @@ export const createProductSchema = (product: {
       : "https://schema.org/OutOfStock",
     "seller": {
       "@type": "LocalBusiness",
-      "name": "Rudra Enterprise"
+      "name": "Raxon Digital"
     }
   }
 });
@@ -189,6 +189,6 @@ export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
     "@type": "ListItem",
     "position": index + 1,
     "name": item.name,
-    "item": `https://rudraenterprise.in${item.url}`
+    "item": `https://raxondigital.in${item.url}`
   }))
 });

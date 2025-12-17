@@ -171,9 +171,9 @@ const shopSchema = [
   {
     "@context": "https://schema.org",
     "@type": "Store",
-    "name": "Rudra Enterprise Shop",
+    "name": "Raxon Digital Shop",
     "description": "Buy CCTV cameras, biometric systems, RAM, SSD, and computer peripherals in Ahmedabad. Quality hardware with installation service available.",
-    "url": "https://rudraenterprise.in/shop",
+    "url": "https://raxondigital.in/shop",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "A-238, Shreyash Complex, Near Vejalpur Bus Stand",
@@ -207,7 +207,7 @@ const Shop = () => {
   return (
     <Layout>
       <SEO
-        title="Buy CCTV Cameras, RAM, SSD & Computer Hardware in Ahmedabad | Rudra Enterprise"
+        title="Buy CCTV Cameras, RAM, SSD & Computer Hardware in Ahmedabad | Raxon Digital"
         description="Shop quality CCTV cameras, biometric systems, RAM, SSD, and computer peripherals in Ahmedabad. Local pickup available. Professional installation. Manufacturer warranty included."
         canonical="/shop"
         schema={shopSchema}
@@ -365,7 +365,7 @@ const Shop = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Why Buy From Rudra?
+              Why Buy From Raxon?
             </h2>
           </motion.div>
 
