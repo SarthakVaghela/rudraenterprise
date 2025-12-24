@@ -32,6 +32,79 @@ const BeforeAfterSlider = () => {
   };
   const current = transformations[currentIndex];
   const IconComponent = current.icon;
-  return;
+  
+  return (
+    <section className="section-padding bg-background">
+      <div className="container mx-auto container-padding">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
+            Real Transformations
+          </h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            See the difference our expert repairs make
+          </p>
+        </motion.div>
+
+        <div className="max-w-2xl mx-auto">
+          <motion.div
+            key={currentIndex}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            className="bg-gradient-card rounded-2xl border border-border p-8"
+          >
+            <div className="flex items-center justify-center mb-6">
+              <div className="w-16 h-16 rounded-full bg-gold/20 flex items-center justify-center">
+                <IconComponent className="w-8 h-8 text-gold" />
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-8 mb-6">
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground mb-2">Before</p>
+                <p className="text-lg font-semibold text-destructive">{current.before}</p>
+              </div>
+              <div className="text-center">
+                <p className="text-sm text-muted-foreground mb-2">After</p>
+                <p className="text-lg font-semibold text-gold">{current.after}</p>
+              </div>
+            </div>
+            
+            <p className="text-center text-muted-foreground">{current.description}</p>
+          </motion.div>
+
+          <div className="flex justify-center gap-4 mt-6">
+            <button
+              onClick={prevSlide}
+              className="p-2 rounded-full bg-card border border-border hover:border-gold/50 transition-colors"
+            >
+              <ChevronLeft className="w-5 h-5 text-foreground" />
+            </button>
+            <div className="flex items-center gap-2">
+              {transformations.map((_, idx) => (
+                <div
+                  key={idx}
+                  className={`w-2 h-2 rounded-full transition-colors ${
+                    idx === currentIndex ? "bg-gold" : "bg-muted"
+                  }`}
+                />
+              ))}
+            </div>
+            <button
+              onClick={nextSlide}
+              className="p-2 rounded-full bg-card border border-border hover:border-gold/50 transition-colors"
+            >
+              <ChevronRight className="w-5 h-5 text-foreground" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default BeforeAfterSlider;

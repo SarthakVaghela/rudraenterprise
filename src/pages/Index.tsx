@@ -190,7 +190,7 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8"
               >
-                Fast, honest computer & security solutions for homes and small businesses.
+                Fast, honest computer & security solutions for homes and businesses of all sizes.
               </motion.p>
               
               <motion.div
