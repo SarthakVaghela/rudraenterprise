@@ -182,7 +182,7 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-foreground leading-tight mb-6"
               >
-                Computer Repair & CCTV Installation in{" "}
+                Computer, CCTV & IT Security Sales, Service & Repair in{" "}
                 <span className="text-gradient-gold">Ahmedabad</span>
               </motion.h1>
               
