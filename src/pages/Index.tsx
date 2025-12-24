@@ -30,6 +30,7 @@ import SustainabilitySection from "@/components/about/SustainabilitySection";
 import TechnicianSection from "@/components/about/TechnicianSection";
 import OptimizationSection from "@/components/about/OptimizationSection";
 import LocalTrustSection from "@/components/about/LocalTrustSection";
+import StatsSection from "@/components/home/StatsSection";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -79,11 +80,6 @@ const services = [
   },
 ];
 
-const stats = [
-  { value: "5,000+", label: "Devices Repaired", icon: Laptop },
-  { value: "99%", label: "Customer Satisfaction", icon: Users },
-  { value: "30-Day", label: "Repair Warranty", icon: Award },
-];
 
 const trustBadges = [
   { icon: Award, text: "30-day Repair Warranty" },
@@ -295,33 +291,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="section-padding bg-background">
-        <div className="container mx-auto container-padding">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="text-center p-8 rounded-2xl bg-gradient-card border border-border"
-              >
-                <div className="w-16 h-16 rounded-full bg-gold/10 flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-gold" />
-                </div>
-                <h3 className="text-4xl md:text-5xl font-montserrat font-bold text-gradient-gold mb-2">
-                  {stat.value}
-                </h3>
-                <p className="text-muted-foreground">{stat.label}</p>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      <StatsSection />
 
       {/* Featured Services */}
       <section className="section-padding bg-steel">
