@@ -93,7 +93,7 @@ const trustBadges = [
 
 const testimonials = [
   {
-    quote: "Raxon Digital fixed my laptop screen in just 2 hours. Excellent service and fair pricing!",
+    quote: "Rudra Enterprise fixed my laptop screen in just 2 hours. Excellent service and fair pricing!",
     author: "Priya S.",
     role: "Business Owner",
   },
@@ -131,21 +131,21 @@ const homeSchema = [
   createServiceSchema({
     name: "Computer Repair Services in Ahmedabad",
     description: "Professional laptop repair, desktop repair, data recovery, virus removal, and hardware upgrades in Ahmedabad. Same-day service with 30-day warranty.",
-    url: "https://raxondigital.in/services"
+    url: "https://rudraenterprise.in/services"
   }),
   createServiceSchema({
     name: "CCTV Installation in Ahmedabad",
     description: "Expert CCTV camera installation, DVR setup, and security system solutions for homes and businesses in Ahmedabad, Vejalpur, and nearby areas.",
-    url: "https://raxondigital.in/services#cctv"
+    url: "https://rudraenterprise.in/services#cctv"
   }),
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Raxon Digital",
-    "url": "https://raxondigital.in",
+    "name": "Rudra Enterprise",
+    "url": "https://rudraenterprise.in",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://raxondigital.in/shop?q={search_term_string}",
+      "target": "https://rudraenterprise.in/shop?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
@@ -155,7 +155,7 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Computer Repair & CCTV Installation in Ahmedabad | Raxon Digital"
+        title="Computer Repair & CCTV Installation in Ahmedabad | Rudra Enterprise"
         description="Trusted computer repair, laptop repair, CCTV installation & data recovery in Ahmedabad. 5000+ devices repaired, 30-day warranty. Visit us in Vejalpur or call +91 94263 22123."
         canonical="/"
         schema={homeSchema}
@@ -234,9 +234,9 @@ const Index = () => {
               className="relative hidden lg:block"
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
+              <img
                   src={heroImage}
-                  alt="Professional technician repairing a laptop at Raxon Digital"
+                  alt="Professional technician repairing a laptop at Rudra Enterprise"
                   className="w-full h-auto object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
@@ -399,7 +399,7 @@ const Index = () => {
               Trusted by Ahmedabad Businesses & Homes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Join 5,000+ satisfied customers who trust Raxon Digital for computer repair and security solutions.
+              Join 5,000+ satisfied customers who trust Rudra Enterprise for computer repair and security solutions.
             </p>
           </motion.div>
 
