@@ -23,11 +23,11 @@ import heroImage from "@/assets/hero-technician.jpg";
 import TechStorySection from "@/components/about/TechStorySection";
 import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
 import DeepDiagnosticsSection from "@/components/about/DeepDiagnosticsSection";
-import BeforeAfterSlider from "@/components/about/BeforeAfterSlider";
+
 import BusinessSection from "@/components/about/BusinessSection";
 import TransparencySection from "@/components/about/TransparencySection";
-import SustainabilitySection from "@/components/about/SustainabilitySection";
-import TechnicianSection from "@/components/about/TechnicianSection";
+
+
 import OptimizationSection from "@/components/about/OptimizationSection";
 import LocalTrustSection from "@/components/about/LocalTrustSection";
 import StatsSection from "@/components/home/StatsSection";
@@ -402,11 +402,8 @@ const Index = () => {
       <TechStorySection />
       <TroubleshootingWizard />
       <DeepDiagnosticsSection />
-      <BeforeAfterSlider />
       <BusinessSection />
       <TransparencySection />
-      <SustainabilitySection />
-      <TechnicianSection />
       <OptimizationSection />
       <LocalTrustSection />
 
