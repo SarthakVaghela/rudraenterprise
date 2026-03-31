@@ -7,7 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import Shop from "./pages/Shop";
+
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
