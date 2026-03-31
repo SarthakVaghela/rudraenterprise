@@ -9,14 +9,25 @@ import {
   Wifi, 
   Camera, 
   HardDrive,
+  Server,
+  ShieldCheck,
+  Lock,
   ArrowRight,
   X 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const categories = [
+  { id: "devices", label: "Device Issues" },
+  { id: "network", label: "Network & Security" },
+  { id: "infrastructure", label: "IT Infrastructure" },
+];
+
 const issues = [
+  // Device Issues
   {
     id: "laptop",
+    category: "devices",
     label: "Laptop Issues",
     icon: Laptop,
     steps: [
@@ -27,6 +38,7 @@ const issues = [
   },
   {
     id: "desktop",
+    category: "devices",
     label: "Desktop Issues",
     icon: Monitor,
     steps: [
@@ -37,6 +49,7 @@ const issues = [
   },
   {
     id: "slow",
+    category: "devices",
     label: "Slow Performance",
     icon: Gauge,
     steps: [
@@ -47,6 +60,7 @@ const issues = [
   },
   {
     id: "display",
+    category: "devices",
     label: "No Display",
     icon: MonitorX,
     steps: [
@@ -56,7 +70,20 @@ const issues = [
     ]
   },
   {
+    id: "data",
+    category: "devices",
+    label: "Data Loss",
+    icon: HardDrive,
+    steps: [
+      "Stop using the affected drive immediately to prevent overwriting.",
+      "Do not attempt DIY recovery on clicking or failed drives.",
+      "Bring the device for professional data recovery — higher success rate."
+    ]
+  },
+  // Network & Security
+  {
     id: "internet",
+    category: "network",
     label: "Internet Problems",
     icon: Wifi,
     steps: [
@@ -67,6 +94,7 @@ const issues = [
   },
   {
     id: "cctv",
+    category: "network",
     label: "CCTV Trouble",
     icon: Camera,
     steps: [
@@ -76,13 +104,48 @@ const issues = [
     ]
   },
   {
-    id: "data",
-    label: "Data Loss",
-    icon: HardDrive,
+    id: "firewall",
+    category: "network",
+    label: "Hardware Firewall",
+    icon: ShieldCheck,
     steps: [
-      "Stop using the affected drive immediately to prevent overwriting.",
-      "Do not attempt DIY recovery on clicking/failed drives.",
-      "Bring the device for professional data recovery — higher success rate."
+      "Verify the firewall device is powered on and all status LEDs are normal.",
+      "Check if firewall rules are blocking legitimate traffic.",
+      "Review logs for any intrusion attempts or configuration errors."
+    ]
+  },
+  {
+    id: "vpn",
+    category: "network",
+    label: "VPN Setup & Issues",
+    icon: Lock,
+    steps: [
+      "Confirm VPN credentials and server address are correctly entered.",
+      "Check if your firewall or ISP is blocking VPN protocols.",
+      "For site-to-site VPN, verify tunnel configuration on both endpoints."
+    ]
+  },
+  // IT Infrastructure
+  {
+    id: "server",
+    category: "infrastructure",
+    label: "Server Configuration",
+    icon: Server,
+    steps: [
+      "Check server hardware health — CPU, RAM, disk usage, and temperatures.",
+      "Review system logs for errors or failed services.",
+      "For new setups, contact us for professional server configuration and hardening."
+    ]
+  },
+  {
+    id: "secure-server",
+    category: "infrastructure",
+    label: "Secure Server Setup",
+    icon: ShieldCheck,
+    steps: [
+      "Ensure OS and all services are updated to latest security patches.",
+      "Configure firewall rules, disable unused ports, and enable intrusion detection.",
+      "Set up automated backups, monitoring alerts, and access controls."
     ]
   },
 ];
