@@ -400,8 +400,6 @@ const Index = () => {
       <TroubleshootingWizard />
       
       <BusinessSection />
-      <TransparencySection />
-      <OptimizationSection />
       <LocalTrustSection />
 
       {/* CTA Section */}
