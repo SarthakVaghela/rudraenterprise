@@ -25,7 +25,7 @@ import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
 
 
 import BusinessSection from "@/components/about/BusinessSection";
-import TransparencySection from "@/components/about/TransparencySection";
+
 
 
 import OptimizationSection from "@/components/about/OptimizationSection";
