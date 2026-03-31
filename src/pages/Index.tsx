@@ -22,7 +22,7 @@ import SEO, { localBusinessSchema, createServiceSchema } from "@/components/SEO"
 import heroImage from "@/assets/hero-technician.jpg";
 import TechStorySection from "@/components/about/TechStorySection";
 import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
-import DeepDiagnosticsSection from "@/components/about/DeepDiagnosticsSection";
+
 
 import BusinessSection from "@/components/about/BusinessSection";
 import TransparencySection from "@/components/about/TransparencySection";
@@ -398,7 +398,7 @@ const Index = () => {
       {/* New Sections */}
       <TechStorySection />
       <TroubleshootingWizard />
-      <DeepDiagnosticsSection />
+      
       <BusinessSection />
       <TransparencySection />
       <OptimizationSection />
