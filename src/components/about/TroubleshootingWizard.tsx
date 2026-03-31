@@ -152,8 +152,10 @@ const issues = [
 
 const TroubleshootingWizard = () => {
   const [selectedIssue, setSelectedIssue] = useState<string | null>(null);
+  const [activeCategory, setActiveCategory] = useState("devices");
   
   const activeIssue = issues.find(i => i.id === selectedIssue);
+  const filteredIssues = issues.filter(i => i.category === activeCategory);
 
   return (
     <section className="section-padding bg-background">
@@ -172,8 +174,26 @@ const TroubleshootingWizard = () => {
           </p>
         </motion.div>
 
+        {/* Category Tabs */}
+        <div className="flex justify-center gap-2 mb-6">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => { setActiveCategory(cat.id); setSelectedIssue(null); }}
+              className={`px-5 py-2 rounded-full text-sm font-semibold transition-all ${
+                activeCategory === cat.id
+                  ? "bg-gold text-background"
+                  : "bg-steel border border-border text-muted-foreground hover:text-foreground hover:border-gold/50"
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Issue Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-8">
-          {issues.map((issue) => (
+          {filteredIssues.map((issue) => (
             <motion.button
               key={issue.id}
               whileHover={{ scale: 1.05 }}
