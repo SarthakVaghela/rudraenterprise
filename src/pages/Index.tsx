@@ -25,10 +25,10 @@ import TroubleshootingWizard from "@/components/about/TroubleshootingWizard";
 
 
 import BusinessSection from "@/components/about/BusinessSection";
-import TransparencySection from "@/components/about/TransparencySection";
 
 
-import OptimizationSection from "@/components/about/OptimizationSection";
+
+
 import LocalTrustSection from "@/components/about/LocalTrustSection";
 import StatsSection from "@/components/home/StatsSection";
 
@@ -400,8 +400,6 @@ const Index = () => {
       <TroubleshootingWizard />
       
       <BusinessSection />
-      <TransparencySection />
-      <OptimizationSection />
       <LocalTrustSection />
 
       {/* CTA Section */}
