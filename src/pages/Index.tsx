@@ -28,7 +28,7 @@ import BusinessSection from "@/components/about/BusinessSection";
 
 
 
-import OptimizationSection from "@/components/about/OptimizationSection";
+
 import LocalTrustSection from "@/components/about/LocalTrustSection";
 import StatsSection from "@/components/home/StatsSection";
 
