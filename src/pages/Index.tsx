@@ -398,7 +398,7 @@ const Index = () => {
       {/* New Sections */}
       <TechStorySection />
       <TroubleshootingWizard />
-      <DeepDiagnosticsSection />
+      
       <BusinessSection />
       <TransparencySection />
       <OptimizationSection />
