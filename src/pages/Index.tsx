@@ -203,9 +203,6 @@ const Index = () => {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Link>
                 </Button>
-                <Button variant="heroOutline" asChild>
-                  <Link to="/shop">Shop Hardware</Link>
-                </Button>
               </motion.div>
 
               {/* Trust Badges */}
