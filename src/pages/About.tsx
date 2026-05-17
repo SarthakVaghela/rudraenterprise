@@ -108,8 +108,8 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About Us - Trusted Computer Repair in Ahmedabad Since 2015 | Rudra Enterprise"
-        description="Rudra Enterprise has served Ahmedabad for 8+ years with expert laptop repair, CCTV installation & data recovery. 5000+ devices repaired. Meet our certified technicians in Vejalpur."
+        title="About Rudra Enterprise | Computer Repair Ahmedabad"
+        description="Serving Ahmedabad since 2015 with expert laptop repair, CCTV installation and data recovery. 5000+ devices repaired by certified technicians."
         canonical="/about"
         schema={aboutSchema}
       />

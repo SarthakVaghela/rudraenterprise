@@ -227,8 +227,8 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="Computer Repair & CCTV Services in Ahmedabad | Rudra Enterprise"
-        description="Professional laptop repair, desktop repair, CCTV installation, data recovery, virus removal & networking services in Ahmedabad. Starting ₹400. 30-day warranty. Call +91 94263 22123."
+        title="IT, Repair & CCTV Services Ahmedabad | Rudra Enterprise"
+        description="Laptop & desktop repair, CCTV installation, data recovery, virus removal and networking in Ahmedabad. Starting ₹400 with a 30-day warranty."
         canonical="/services"
         schema={servicesSchema}
       />
