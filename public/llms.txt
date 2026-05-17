@@ -1,0 +1,16 @@
+# Rudra Enterprise
+
+> IT, CCTV, and security solutions for homes and businesses in Ahmedabad — sales, repair, and installation.
+
+Rudra Enterprise provides computer & laptop repair, CCTV installation, data recovery, network setup, server configuration, and hardware firewall/VPN services across Ahmedabad (Vejalpur, Jodhpur, Satellite, Vastrapur, Bopal).
+
+## Pages
+
+- [Home](/): Overview of services, troubleshooting wizard, and contact information.
+- [About](/about): Vision, mission, values, and why customers choose Rudra Enterprise.
+- [Services](/services): Full list of IT, CCTV, repair, and security services offered.
+- [Contact](/contact): Address, phone, WhatsApp, and contact form.
+
+## Optional
+
+- [Sitemap](/sitemap.xml): Full list of indexable pages.
