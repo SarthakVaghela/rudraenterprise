@@ -223,6 +223,7 @@ const TroubleshootingWizard = () => {
               <div className="p-6 md:p-8 rounded-2xl bg-gradient-card border border-gold/30 relative">
                 <button
                   onClick={() => setSelectedIssue(null)}
+                  aria-label="Close troubleshooting details"
                   className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
                 >
                   <X className="w-5 h-5" />

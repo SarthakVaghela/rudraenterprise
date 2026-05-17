@@ -267,8 +267,11 @@ const Services = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="section-padding bg-steel">
+      <section className="section-padding bg-steel" aria-labelledby="all-services-heading">
         <div className="container mx-auto container-padding">
+          <h2 id="all-services-heading" className="sr-only">
+            All Services
+          </h2>
           <motion.div
             initial="hidden"
             whileInView="visible"

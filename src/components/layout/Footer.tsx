@@ -81,9 +81,9 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-montserrat font-semibold text-foreground mb-4">
+            <h3 className="font-montserrat font-semibold text-foreground mb-4">
               Quick Links
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.path}>
@@ -100,9 +100,9 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="font-montserrat font-semibold text-foreground mb-4">
+            <h3 className="font-montserrat font-semibold text-foreground mb-4">
               Our Services
-            </h4>
+            </h3>
             <ul className="space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.path}>
@@ -119,9 +119,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-montserrat font-semibold text-foreground mb-4">
+            <h3 className="font-montserrat font-semibold text-foreground mb-4">
               Contact Us
-            </h4>
+            </h3>
             <ul className="space-y-4">
               <li>
                 <a
