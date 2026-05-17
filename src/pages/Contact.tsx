@@ -178,8 +178,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us - Computer Repair Shop in Vejalpur, Ahmedabad | Rudra Enterprise"
-        description="Contact Rudra Enterprise for laptop repair, CCTV installation & IT services in Ahmedabad. Visit: A-238, Shreyash Complex, Vejalpur. Call: +91 94263 22123. Mon-Sat 10AM-7PM."
+        title="Contact Rudra Enterprise | Vejalpur, Ahmedabad"
+        description="Reach Rudra Enterprise for laptop repair, CCTV and IT services in Ahmedabad. Visit Shreyash Complex, Vejalpur or call +91 94263 22123."
         canonical="/contact"
         schema={contactSchema}
       />
