@@ -258,8 +258,11 @@ const Index = () => {
       </section>
 
       {/* Quick Services Strip */}
-      <section className="py-16 bg-steel border-y border-border">
+      <section className="py-16 bg-steel border-y border-border" aria-labelledby="quick-services-heading">
         <div className="container mx-auto container-padding">
+          <h2 id="quick-services-heading" className="sr-only">
+            Our Core Services
+          </h2>
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -339,8 +342,8 @@ const Index = () => {
                       ))}
                     </ul>
                     <Button variant="goldOutline" size="sm" asChild>
-                      <Link to={service.link}>
-                        Learn More
+                      <Link to={service.link} aria-label={`View ${service.title} details`}>
+                        View {service.title}
                         <ArrowRight className="w-4 h-4 ml-2" />
                       </Link>
                     </Button>

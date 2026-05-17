@@ -274,10 +274,11 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="contact-name" className="block text-sm font-medium text-foreground mb-2">
                       Name *
                     </label>
                     <Input
+                      id="contact-name"
                       type="text"
                       required
                       value={formData.name}
@@ -287,10 +288,11 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="contact-phone" className="block text-sm font-medium text-foreground mb-2">
                       Phone *
                     </label>
                     <Input
+                      id="contact-phone"
                       type="tel"
                       required
                       value={formData.phone}
@@ -302,10 +304,11 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-email" className="block text-sm font-medium text-foreground mb-2">
                     Email
                   </label>
                   <Input
+                    id="contact-email"
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -316,14 +319,14 @@ const Contact = () => {
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="contact-service-type" className="block text-sm font-medium text-foreground mb-2">
                       Service Type
                     </label>
                     <Select
                       value={formData.serviceType}
                       onValueChange={(value) => setFormData({ ...formData, serviceType: value })}
                     >
-                      <SelectTrigger className="bg-card border-border">
+                      <SelectTrigger id="contact-service-type" aria-label="Select service type" className="bg-card border-border">
                         <SelectValue placeholder="Select service" />
                       </SelectTrigger>
                       <SelectContent>
@@ -338,10 +341,11 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="contact-message" className="block text-sm font-medium text-foreground mb-2">
                     Message
                   </label>
                   <Textarea
+                    id="contact-message"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Describe your issue or inquiry..."
@@ -411,7 +415,7 @@ const Contact = () => {
                 <div className="space-y-4">
                   {faqs.map((faq, index) => (
                     <div key={index} className="p-4 rounded-xl bg-gradient-card border border-border">
-                      <h4 className="font-semibold text-foreground mb-2">{faq.question}</h4>
+                      <h3 className="font-semibold text-foreground mb-2">{faq.question}</h3>
                       <p className="text-sm text-muted-foreground">{faq.answer}</p>
                     </div>
                   ))}
