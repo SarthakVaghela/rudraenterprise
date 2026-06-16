@@ -330,14 +330,15 @@ const Services = () => {
           </motion.div>
 
           <div className="space-y-12">
-            {services.slice(0, 4).map((service, index) => (
+            {services.map((service, index) => (
               <motion.div
                 key={service.id}
+                id={`detail-${service.id}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`grid md:grid-cols-2 gap-8 items-center ${
+                transition={{ delay: index * 0.05 }}
+                className={`grid md:grid-cols-2 gap-8 items-center scroll-mt-32 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
