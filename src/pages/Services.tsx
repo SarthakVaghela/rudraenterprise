@@ -207,7 +207,7 @@ const servicesSchema = [
   }),
   createServiceSchema({
     name: "Networking Services in Ahmedabad",
-    description: "Wi-Fi optimization, router configuration, network security, server setup, and VPN configuration for homes and businesses.",
+    description: "Enterprise Wi-Fi optimization, hardware firewall setup, network security, server integration at scale, and VPN configuration for homes and businesses.",
     price: "800",
     url: "https://rudraenterprise.in/services#networking"
   }),
