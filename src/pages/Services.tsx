@@ -285,7 +285,11 @@ const Services = () => {
                 key={service.id}
                 id={service.id}
                 variants={fadeInUp}
-                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 card-lift scroll-mt-32"
+                onClick={() => {
+                  const el = document.getElementById(`detail-${service.id}`);
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 card-lift scroll-mt-32 cursor-pointer"
               >
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                   <service.icon className="w-7 h-7 text-gold" />
@@ -297,6 +301,9 @@ const Services = () => {
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gold font-medium">{service.price}</span>
                   <span className="text-muted-foreground">{service.turnaround}</span>
+                </div>
+                <div className="mt-3 text-xs text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  View Details →
                 </div>
               </motion.div>
             ))}
