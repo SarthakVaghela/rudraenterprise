@@ -16,6 +16,26 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEO, { createServiceSchema, breadcrumbSchema, createFAQSchema } from "@/components/SEO";
 
+import laptopImg from "@/assets/service-laptop.jpg";
+import desktopImg from "@/assets/service-desktop.jpg";
+import dataRecoveryImg from "@/assets/service-data-recovery.jpg";
+import antivirusImg from "@/assets/service-antivirus.jpg";
+import cctvImg from "@/assets/service-cctv.jpg";
+import networkingImg from "@/assets/service-networking.jpg";
+import biometricImg from "@/assets/service-biometric.jpg";
+import hardwareImg from "@/assets/service-hardware.jpg";
+
+const serviceImages: Record<string, string> = {
+  laptop: laptopImg,
+  desktop: desktopImg,
+  "data-recovery": dataRecoveryImg,
+  antivirus: antivirusImg,
+  cctv: cctvImg,
+  networking: networkingImg,
+  biometric: biometricImg,
+  hardware: hardwareImg,
+};
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -375,8 +395,15 @@ const Services = () => {
                   </Button>
                 </div>
                 <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
-                  <div className="aspect-video rounded-2xl bg-gradient-card border border-border flex items-center justify-center">
-                    <service.icon className="w-24 h-24 text-gold/30" />
+                  <div className="aspect-video rounded-2xl border border-border overflow-hidden">
+                    <img 
+                      src={serviceImages[service.id]} 
+                      alt={`${service.title} service`} 
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      width={1024}
+                      height={576}
+                    />
                   </div>
                 </div>
               </motion.div>
