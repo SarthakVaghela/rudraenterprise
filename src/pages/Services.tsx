@@ -121,15 +121,15 @@ const services = [
     id: "networking",
     icon: Wifi,
     title: "Networking & Servers",
-    shortDesc: "Setup and troubleshoot routers, switches and local servers.",
-    description: "Reliable network infrastructure for homes and businesses — from Wi-Fi optimization to server setup.",
+    shortDesc: "Enterprise networking, firewall security, server setup and large-scale infrastructure.",
+    description: "End-to-end network infrastructure for homes and enterprises — from Wi-Fi optimization and hardware firewalls to large-scale server integration and upgrades.",
     features: [
       "Wi-Fi optimization",
-      "Router configuration",
-      "Network security",
-      "Server setup",
-      "Cable management",
-      "VPN configuration",
+      "Router & switch configuration",
+      "Hardware firewall & network security",
+      "Enterprise infra upgrades",
+      "Server setup & integration at scale",
+      "VPN & remote access",
     ],
     price: "Starting from ₹800",
     turnaround: "Same day",
@@ -206,7 +206,7 @@ const servicesSchema = [
   }),
   createServiceSchema({
     name: "Networking Services in Ahmedabad",
-    description: "Wi-Fi optimization, router configuration, network security, server setup, and VPN configuration for homes and businesses.",
+    description: "Enterprise Wi-Fi optimization, hardware firewall setup, network security, server integration at scale, and VPN configuration for homes and businesses.",
     price: "800",
     url: "https://rudraenterprise.in/services#networking"
   }),
@@ -284,7 +284,11 @@ const Services = () => {
                 key={service.id}
                 id={service.id}
                 variants={fadeInUp}
-                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 card-lift scroll-mt-32"
+                onClick={() => {
+                  const el = document.getElementById(`detail-${service.id}`);
+                  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+                className="group p-6 rounded-xl bg-gradient-card border border-border hover:border-gold/50 card-lift scroll-mt-32 cursor-pointer"
               >
                 <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
                   <service.icon className="w-7 h-7 text-gold" />
@@ -296,6 +300,9 @@ const Services = () => {
                 <div className="flex items-center justify-between text-sm">
                   <span className="text-gold font-medium">{service.price}</span>
                   <span className="text-muted-foreground">{service.turnaround}</span>
+                </div>
+                <div className="mt-3 text-xs text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  View Details →
                 </div>
               </motion.div>
             ))}
@@ -322,14 +329,15 @@ const Services = () => {
           </motion.div>
 
           <div className="space-y-12">
-            {services.slice(0, 4).map((service, index) => (
+            {services.map((service, index) => (
               <motion.div
                 key={service.id}
+                id={`detail-${service.id}`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`grid md:grid-cols-2 gap-8 items-center ${
+                transition={{ delay: index * 0.05 }}
+                className={`grid md:grid-cols-2 gap-8 items-center scroll-mt-32 ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
