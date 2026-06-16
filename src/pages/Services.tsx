@@ -16,6 +16,26 @@ import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
 import SEO, { createServiceSchema, breadcrumbSchema, createFAQSchema } from "@/components/SEO";
 
+import laptopImg from "@/assets/service-laptop.jpg";
+import desktopImg from "@/assets/service-desktop.jpg";
+import dataRecoveryImg from "@/assets/service-data-recovery.jpg";
+import antivirusImg from "@/assets/service-antivirus.jpg";
+import cctvImg from "@/assets/service-cctv.jpg";
+import networkingImg from "@/assets/service-networking.jpg";
+import biometricImg from "@/assets/service-biometric.jpg";
+import hardwareImg from "@/assets/service-hardware.jpg";
+
+const serviceImages: Record<string, string> = {
+  laptop: laptopImg,
+  desktop: desktopImg,
+  "data-recovery": dataRecoveryImg,
+  antivirus: antivirusImg,
+  cctv: cctvImg,
+  networking: networkingImg,
+  biometric: biometricImg,
+  hardware: hardwareImg,
+};
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
