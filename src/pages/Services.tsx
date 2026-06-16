@@ -395,8 +395,15 @@ const Services = () => {
                   </Button>
                 </div>
                 <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
-                  <div className="aspect-video rounded-2xl bg-gradient-card border border-border flex items-center justify-center">
-                    <service.icon className="w-24 h-24 text-gold/30" />
+                  <div className="aspect-video rounded-2xl border border-border overflow-hidden">
+                    <img 
+                      src={serviceImages[service.id]} 
+                      alt={`${service.title} service`} 
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      width={1024}
+                      height={576}
+                    />
                   </div>
                 </div>
               </motion.div>
