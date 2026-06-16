@@ -1,5 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
-import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Laptop, 
