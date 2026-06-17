@@ -61,14 +61,16 @@ const contactInfo = [
 ];
 
 const serviceOptions = [
-  "Laptop Repair",
-  "Desktop Repair",
+  "Laptop & Desktop Repair",
+  "Custom PC Build",
+  "Software & Licensing",
   "Data Recovery",
   "Virus Removal",
   "CCTV Installation",
-  "Networking",
+  "Networking & Servers",
   "Biometric Systems",
-  "Hardware Purchase",
+  "Hardware / Printer Purchase",
+  "IT Advising (B2B/B2C)",
   "Other",
 ];
 

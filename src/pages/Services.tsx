@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { 
   Laptop, 
-  Monitor, 
   HardDrive, 
   Shield, 
   Wifi, 
   Camera,
   Fingerprint,
   Cpu,
+  Package,
+  Wrench,
   ArrowRight,
   CheckCircle
 } from "lucide-react";
@@ -17,23 +18,25 @@ import Layout from "@/components/layout/Layout";
 import SEO, { createServiceSchema, breadcrumbSchema, createFAQSchema } from "@/components/SEO";
 
 import laptopImg from "@/assets/service-laptop.jpg";
-import desktopImg from "@/assets/service-desktop.jpg";
 import dataRecoveryImg from "@/assets/service-data-recovery.jpg";
 import antivirusImg from "@/assets/service-antivirus.jpg";
 import cctvImg from "@/assets/service-cctv.jpg";
 import networkingImg from "@/assets/service-networking.jpg";
 import biometricImg from "@/assets/service-biometric.jpg";
 import hardwareImg from "@/assets/service-hardware.jpg";
+import softwareImg from "@/assets/service-software.jpg";
+import customBuildImg from "@/assets/service-custom-build.jpg";
 
 const serviceImages: Record<string, string> = {
-  laptop: laptopImg,
-  desktop: desktopImg,
+  "laptop-desktop": laptopImg,
+  "custom-build": customBuildImg,
   "data-recovery": dataRecoveryImg,
   antivirus: antivirusImg,
   cctv: cctvImg,
   networking: networkingImg,
   biometric: biometricImg,
   hardware: hardwareImg,
+  software: softwareImg,
 };
 
 const fadeInUp = {
@@ -53,38 +56,55 @@ const staggerContainer = {
 
 const services = [
   {
-    id: "laptop",
+    id: "laptop-desktop",
     icon: Laptop,
-    title: "Laptop Repair",
-    shortDesc: "Fast, reliable hardware and software repairs for all major brands.",
-    description: "From cracked screens to failing motherboards, we fix all laptop issues with genuine parts and expert care.",
+    title: "Laptop & Desktop Repair",
+    shortDesc: "Fast, reliable repair for laptops and desktops of all major brands.",
+    description: "Whether it is a home laptop, office workstation, or business fleet, we diagnose and repair all computers with genuine parts and expert care.",
     features: [
-      "Screen replacement",
+      "Screen & keyboard replacement",
       "Battery replacement",
-      "Keyboard repair",
-      "Motherboard repair",
-      "SSD/RAM upgrades",
+      "Motherboard & component repair",
+      "SSD, RAM & storage upgrades",
+      "OS installation & tuning",
       "Software troubleshooting",
     ],
-    price: "Starting from ₹500",
-    turnaround: "24-48 hours",
+    price: "Starting from ₹400",
+    turnaround: "Same day to 48 hours",
   },
   {
-    id: "desktop",
-    icon: Monitor,
-    title: "Desktop Repair",
-    shortDesc: "Complete desktop solutions from diagnosis to upgrade.",
-    description: "Whether it's a home PC or office workstation, we diagnose and repair all desktop computers.",
+    id: "custom-build",
+    icon: Wrench,
+    title: "Custom PC Builds",
+    shortDesc: "Custom gaming rigs and heavy editing workstations built to your spec.",
+    description: "Our expertise in custom builds covers everything from competitive gaming PCs to high-end video editing and 3D rendering workstations, all tuned for peak performance.",
     features: [
-      "Hardware diagnosis",
-      "Component replacement",
-      "OS installation",
-      "Performance tuning",
-      "Custom builds",
-      "Cooling solutions",
+      "Gaming PC builds",
+      "Editing & rendering workstations",
+      "Component selection & advising",
+      "Cable management & cooling",
+      "OS & driver setup",
+      "Performance benchmarking",
     ],
-    price: "Starting from ₹400",
-    turnaround: "Same day available",
+    price: "Custom quote",
+    turnaround: "2 to 5 days",
+  },
+  {
+    id: "software",
+    icon: Package,
+    title: "Software Sales & Licensing",
+    shortDesc: "Genuine MS Office, Tally, Windows, antivirus and other mainstream software.",
+    description: "Buy genuine software licenses with installation and activation support, including productivity, accounting, design and security tools for homes and businesses.",
+    features: [
+      "Microsoft Office & Windows",
+      "Tally accounting software",
+      "Antivirus & security suites",
+      "Design & productivity tools",
+      "License renewals",
+      "Installation & activation",
+    ],
+    price: "Varies by license",
+    turnaround: "Same day",
   },
   {
     id: "data-recovery",
@@ -101,7 +121,7 @@ const services = [
       "Encrypted drive access",
     ],
     price: "Starting from ₹1,000",
-    turnaround: "24-72 hours",
+    turnaround: "24 to 72 hours",
   },
   {
     id: "antivirus",
@@ -118,7 +138,7 @@ const services = [
       "Security audit",
     ],
     price: "Starting from ₹600",
-    turnaround: "2-4 hours",
+    turnaround: "2 to 4 hours",
   },
   {
     id: "cctv",
@@ -135,14 +155,14 @@ const services = [
       "Maintenance contracts",
     ],
     price: "Custom quote",
-    turnaround: "1-3 days",
+    turnaround: "1 to 3 days",
   },
   {
     id: "networking",
     icon: Wifi,
     title: "Networking & Servers",
     shortDesc: "Enterprise networking, firewall security, server setup and large-scale infrastructure.",
-    description: "End-to-end network infrastructure for homes and enterprises — from Wi-Fi optimization and hardware firewalls to large-scale server integration and upgrades.",
+    description: "End-to-end network infrastructure for homes and enterprises, from Wi-Fi optimization and hardware firewalls to large-scale server integration and upgrades.",
     features: [
       "Wi-Fi optimization",
       "Router & switch configuration",
@@ -169,21 +189,21 @@ const services = [
       "Maintenance",
     ],
     price: "Custom quote",
-    turnaround: "1-2 days",
+    turnaround: "1 to 2 days",
   },
   {
     id: "hardware",
     icon: Cpu,
     title: "Hardware Sales & Upgrades",
-    shortDesc: "RAM, SSDs, motherboards and more — tested and compatible.",
-    description: "Quality computer components with compatibility guarantee and professional installation.",
+    shortDesc: "RAM, SSDs, motherboards, printers and more, tested and compatible.",
+    description: "Quality computer components and peripherals including printers, with compatibility guarantee and professional installation.",
     features: [
-      "RAM upgrades",
-      "SSD installation",
+      "RAM & SSD upgrades",
       "Graphics cards",
+      "Printers & peripherals",
       "Power supplies",
       "Cooling systems",
-      "Peripherals",
+      "B2B & B2C IT sales",
     ],
     price: "Varies by product",
     turnaround: "Same day installation",
@@ -196,16 +216,20 @@ const servicesSchema = [
     { name: "Services", url: "/services" }
   ]),
   createServiceSchema({
-    name: "Laptop Repair in Ahmedabad",
-    description: "Professional laptop repair services including screen replacement, battery replacement, keyboard repair, motherboard repair, and SSD upgrades. Same-day service available.",
-    price: "500",
-    url: "https://rudraenterprise.lovable.app/services#laptop"
+    name: "Laptop & Desktop Repair in Ahmedabad",
+    description: "Professional laptop and desktop repair including screen replacement, motherboard repair, SSD upgrades and OS installation. Same-day service available.",
+    price: "400",
+    url: "https://rudraenterprise.lovable.app/services#laptop-desktop"
   }),
   createServiceSchema({
-    name: "Desktop Computer Repair in Ahmedabad",
-    description: "Complete desktop repair solutions from diagnosis to component replacement and custom builds. Fast turnaround with 30-day warranty.",
-    price: "400",
-    url: "https://rudraenterprise.lovable.app/services#desktop"
+    name: "Custom PC Builds in Ahmedabad",
+    description: "Custom gaming PCs and heavy editing workstations built and tuned by experts. Component selection, assembly, OS setup and benchmarking.",
+    url: "https://rudraenterprise.lovable.app/services#custom-build"
+  }),
+  createServiceSchema({
+    name: "Software Sales & Licensing in Ahmedabad",
+    description: "Genuine Microsoft Office, Tally, Windows, antivirus and mainstream software licenses with installation and activation support.",
+    url: "https://rudraenterprise.lovable.app/services#software"
   }),
   createServiceSchema({
     name: "Data Recovery Services in Ahmedabad",
@@ -248,7 +272,7 @@ const Services = () => {
     <Layout>
       <SEO
         title="IT, Repair & CCTV Services Ahmedabad | Rudra Enterprise"
-        description="Laptop & desktop repair, CCTV installation, data recovery, virus removal and networking in Ahmedabad. Starting ₹400 with a 30-day warranty."
+        description="Laptop & desktop repair, custom PC builds, software licensing, CCTV, data recovery, networking and printers in Ahmedabad. 30-day warranty."
         canonical="/services"
         schema={servicesSchema}
       />
@@ -273,14 +297,14 @@ const Services = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              Computer Repair & IT Services in{" "}
+              IT Sales, Repair & Security Services in{" "}
               <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
               className="text-xl text-muted-foreground"
             >
-              From quick repairs to complete security installations — we've got you covered.
+              B2B and B2C IT sales, repair, advising, networking, custom builds, software and security. One trusted partner for it all.
             </motion.p>
           </motion.div>
         </div>
@@ -341,10 +365,10 @@ const Services = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-montserrat font-bold text-foreground mb-4">
-              Computer & Laptop Repair Services in Ahmedabad
+              Computer, IT & Security Services in Ahmedabad
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Detailed information about our repair and IT services with transparent pricing.
+              Detailed information about our repair, sales and IT services with transparent pricing.
             </p>
           </motion.div>
 
@@ -426,7 +450,7 @@ const Services = () => {
               How We Repair Your Device
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our 3-step repair process: Diagnose, Repair, and Test — all with 30-day warranty coverage.
+              Our 3-step repair process: Diagnose, Repair, and Test, all with 30-day warranty coverage.
             </p>
           </motion.div>
 

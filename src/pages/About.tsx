@@ -348,7 +348,7 @@ const About = () => {
               Why Choose Us?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're not just another repair shop — we're your technology partners.
+              We're not just another repair shop. We're your technology partners.
             </p>
           </motion.div>
 
