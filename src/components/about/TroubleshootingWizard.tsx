@@ -33,7 +33,7 @@ const issues = [
     steps: [
       "Check if the device powers on and listen for any beeps or fan noise.",
       "Try a hard reset by holding the power button for 10 seconds.",
-      "If issues persist, the problem may be hardware-related — bring it in for diagnosis."
+      "If issues persist, the problem may be hardware-related, bring it in for diagnosis."
     ]
   },
   {
@@ -77,7 +77,7 @@ const issues = [
     steps: [
       "Stop using the affected drive immediately to prevent overwriting.",
       "Do not attempt DIY recovery on clicking or failed drives.",
-      "Bring the device for professional data recovery — higher success rate."
+      "Bring the device for professional data recovery, higher success rate."
     ]
   },
   // Network & Security
@@ -132,7 +132,7 @@ const issues = [
     label: "Server Configuration",
     icon: Server,
     steps: [
-      "Check server hardware health — CPU, RAM, disk usage, and temperatures.",
+      "Check server hardware health, CPU, RAM, disk usage, and temperatures.",
       "Review system logs for errors or failed services.",
       "For new setups, contact us for professional server configuration and hardening."
     ]

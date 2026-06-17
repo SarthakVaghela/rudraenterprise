@@ -34,7 +34,7 @@ const OptimizationSection = () => {
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
               Our Optimization Booster cleans, tunes, updates, and stabilizes your system 
-              for peak performance — ideal for slow laptops and older desktops.
+              for peak performance, ideal for slow laptops and older desktops.
             </p>
             <Button variant="gold" asChild>
               <Link to="/contact">

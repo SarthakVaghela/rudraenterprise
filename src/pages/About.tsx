@@ -141,7 +141,7 @@ const About = () => {
               variants={fadeInUp}
               className="text-xl text-muted-foreground"
             >
-              We fix stubborn computers — no exorcism required.
+              We fix stubborn computers, no exorcism required.
             </motion.p>
           </motion.div>
         </div>
@@ -254,7 +254,7 @@ const About = () => {
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
                   "To become the most trusted and accessible technology service partner for every 
-                  home and business — delivering repair, security, and digital solutions with 
+                  home and business, delivering repair, security, and digital solutions with 
                   unmatched quality and honesty."
                 </p>
               </div>
@@ -348,7 +348,7 @@ const About = () => {
               Why Choose Us?
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We're not just another repair shop — we're your technology partners.
+              We're not just another repair shop. We're your technology partners.
             </p>
           </motion.div>
 

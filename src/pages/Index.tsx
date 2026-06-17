@@ -182,7 +182,7 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-foreground leading-tight mb-6"
               >
-                Complete Computer, CCTV & IT Security Solutions in{" "}
+                IT Sales, Repair, Custom Builds & CCTV in{" "}
                 <span className="text-gradient-gold">Ahmedabad</span>
               </motion.h1>
               
@@ -190,7 +190,7 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 mb-8"
               >
-                Fast, honest computer & security solutions for homes and businesses of all sizes.
+                Your one-stop IT partner for homes and businesses: B2B and B2C sales, repairs, custom PC builds, networking, software licensing, printers and security.
               </motion.p>
               
               <motion.div

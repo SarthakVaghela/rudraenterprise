@@ -21,7 +21,7 @@ const TechStorySection = () => {
             <span className="text-gradient-gold">You Do</span>
           </h2>
           <p className="text-xl text-gold font-medium mb-8">
-            Technology should serve you — not slow you down.
+            Technology should serve you, not slow you down.
           </p>
           <div className="text-lg text-muted-foreground leading-relaxed space-y-4">
             <p>
