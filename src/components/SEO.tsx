@@ -14,11 +14,12 @@ const SEO = ({
   description, 
   canonical, 
   type = "website",
-  image = "https://lovable.dev/opengraph-image-p98pqg.png",
+  image = "https://rudraenterprise.lovable.app/og-image.jpg",
   schema
 }: SEOProps) => {
-  const siteUrl = "https://rudraenterprise.in";
+  const siteUrl = "https://rudraenterprise.lovable.app";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
+
 
   return (
     <Helmet>
