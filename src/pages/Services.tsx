@@ -199,41 +199,41 @@ const servicesSchema = [
     name: "Laptop Repair in Ahmedabad",
     description: "Professional laptop repair services including screen replacement, battery replacement, keyboard repair, motherboard repair, and SSD upgrades. Same-day service available.",
     price: "500",
-    url: "https://rudraenterprise.in/services#laptop"
+    url: "https://rudraenterprise.lovable.app/services#laptop"
   }),
   createServiceSchema({
     name: "Desktop Computer Repair in Ahmedabad",
     description: "Complete desktop repair solutions from diagnosis to component replacement and custom builds. Fast turnaround with 30-day warranty.",
     price: "400",
-    url: "https://rudraenterprise.in/services#desktop"
+    url: "https://rudraenterprise.lovable.app/services#desktop"
   }),
   createServiceSchema({
     name: "Data Recovery Services in Ahmedabad",
     description: "Professional data recovery from damaged hard drives, SSDs, and RAID systems. Cloud backup setup and encrypted drive access.",
     price: "1000",
-    url: "https://rudraenterprise.in/services#data-recovery"
+    url: "https://rudraenterprise.lovable.app/services#data-recovery"
   }),
   createServiceSchema({
     name: "CCTV Installation in Ahmedabad",
     description: "Expert CCTV camera installation, DVR/NVR setup, remote viewing configuration, and maintenance contracts for homes and businesses.",
-    url: "https://rudraenterprise.in/services#cctv"
+    url: "https://rudraenterprise.lovable.app/services#cctv"
   }),
   createServiceSchema({
     name: "Virus and Malware Removal in Ahmedabad",
     description: "Complete virus removal, malware cleanup, ransomware recovery, and antivirus installation with system optimization.",
     price: "600",
-    url: "https://rudraenterprise.in/services#antivirus"
+    url: "https://rudraenterprise.lovable.app/services#antivirus"
   }),
   createServiceSchema({
     name: "Networking Services in Ahmedabad",
     description: "Enterprise Wi-Fi optimization, hardware firewall setup, network security, server integration at scale, and VPN configuration for homes and businesses.",
     price: "800",
-    url: "https://rudraenterprise.in/services#networking"
+    url: "https://rudraenterprise.lovable.app/services#networking"
   }),
   createServiceSchema({
     name: "Biometric Attendance Systems in Ahmedabad",
     description: "Fingerprint and face recognition attendance systems installation and maintenance for offices and businesses.",
-    url: "https://rudraenterprise.in/services#biometric"
+    url: "https://rudraenterprise.lovable.app/services#biometric"
   }),
   createFAQSchema([
     { question: "How long does laptop repair take?", answer: "Most laptop repairs are completed within 24-48 hours. Same-day service is available for common issues like screen replacement and virus removal." },

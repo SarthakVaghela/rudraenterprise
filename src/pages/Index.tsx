@@ -127,21 +127,21 @@ const homeSchema = [
   createServiceSchema({
     name: "Computer Repair Services in Ahmedabad",
     description: "Professional laptop repair, desktop repair, data recovery, virus removal, and hardware upgrades in Ahmedabad. Same-day service with 30-day warranty.",
-    url: "https://rudraenterprise.in/services"
+    url: "https://rudraenterprise.lovable.app/services"
   }),
   createServiceSchema({
     name: "CCTV Installation in Ahmedabad",
     description: "Expert CCTV camera installation, DVR setup, and security system solutions for homes and businesses in Ahmedabad, Vejalpur, and nearby areas.",
-    url: "https://rudraenterprise.in/services#cctv"
+    url: "https://rudraenterprise.lovable.app/services#cctv"
   }),
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Rudra Enterprise",
-    "url": "https://rudraenterprise.in",
+    "url": "https://rudraenterprise.lovable.app",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://rudraenterprise.in/shop?q={search_term_string}",
+      "target": "https://rudraenterprise.lovable.app/shop?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }
