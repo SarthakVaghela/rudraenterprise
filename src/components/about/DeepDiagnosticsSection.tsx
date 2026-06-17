@@ -55,7 +55,7 @@ const DeepDiagnosticsSection = () => {
               and system health to identify hidden issues before they become costly failures.
               <br /><br />
               <span className="text-foreground font-medium">
-                This is how we repair faster — and repair once.
+                This is how we repair faster, and repair once.
               </span>
             </p>
           </motion.div>

@@ -98,8 +98,8 @@ const LocalTrustSection = () => {
                     Business Hours
                   </h3>
                   <p className="text-muted-foreground">
-                    Monday – Saturday<br />
-                    10:00 AM – 7:00 PM
+                    Monday-Saturday<br />
+                    10:00 AM-7:00 PM
                   </p>
                 </div>
               </div>

@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Rudra Enterprise — Fast, local tech services you can trust. Repair. Secure. Restore.
+              Rudra Enterprise, Fast, local tech services you can trust. Repair. Secure. Restore.
             </p>
             <div className="flex items-center gap-4">
               <a
