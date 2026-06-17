@@ -151,8 +151,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Computer Repair & CCTV in Ahmedabad | Rudra Enterprise"
-        description="Trusted computer & laptop repair, CCTV installation and data recovery in Ahmedabad. 5000+ devices repaired with a 30-day warranty."
+        title="IT Repair, CCTV & Security in Ahmedabad | Rudra Enterprise"
+        description="Trusted IT repair, CCTV surveillance & security services in Ahmedabad. 5000+ devices repaired, 30-day warranty."
         canonical="/"
         schema={homeSchema}
       />
