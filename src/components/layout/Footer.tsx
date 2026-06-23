@@ -145,11 +145,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:info@rudraenterprise.in"
+                  href="mailto:info@rudracomputers.com"
                   className="flex items-center gap-3 text-muted-foreground text-sm hover:text-gold transition-colors"
                 >
                   <Mail className="w-4 h-4 text-gold flex-shrink-0" />
-                  <span>info@rudraenterprise.in</span>
+                  <span>info@rudracomputers.com</span>
                 </a>
               </li>
             </ul>
