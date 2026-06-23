@@ -138,12 +138,7 @@ const homeSchema = [
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Rudra Enterprise",
-    "url": "https://rudracomputers.com",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://rudracomputers.com/shop?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "url": "https://rudracomputers.com"
   }
 ];
 
