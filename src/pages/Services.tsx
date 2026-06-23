@@ -322,7 +322,7 @@ const Services = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              IT Sales, Repair & Security Services in{" "}
+              IT Sales, Services, Repair & Surveillance in{" "}
               <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
