@@ -329,7 +329,7 @@ const Services = () => {
               variants={fadeInUp}
               className="text-xl text-muted-foreground"
             >
-              B2B and B2C IT sales, repair, advising, networking, custom builds, software and security. One trusted partner for it all.
+              B2B and B2C IT sales, services, repair, advising, networking, custom builds, software, CCTV and annual maintenance contracts. One trusted partner for it all.
             </motion.p>
           </motion.div>
         </div>
