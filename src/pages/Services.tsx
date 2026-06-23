@@ -11,7 +11,8 @@ import {
   Package,
   Wrench,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  FileCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
@@ -26,6 +27,7 @@ import biometricImg from "@/assets/service-biometric.jpg";
 import hardwareImg from "@/assets/service-hardware.jpg";
 import softwareImg from "@/assets/service-software.jpg";
 import customBuildImg from "@/assets/service-custom-build.jpg";
+import amcImg from "@/assets/service-amc.jpg";
 
 const serviceImages: Record<string, string> = {
   "laptop-desktop": laptopImg,
@@ -37,6 +39,7 @@ const serviceImages: Record<string, string> = {
   biometric: biometricImg,
   hardware: hardwareImg,
   software: softwareImg,
+  amc: amcImg,
 };
 
 const fadeInUp = {

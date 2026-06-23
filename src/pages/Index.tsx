@@ -182,7 +182,7 @@ const Index = () => {
                 variants={fadeInUp}
                 className="text-4xl md:text-5xl lg:text-6xl font-montserrat font-bold text-foreground leading-tight mb-6"
               >
-                IT Sales, Repair, Custom Builds & CCTV in{" "}
+                IT Sales, Services, Repair & Surveillance in{" "}
                 <span className="text-gradient-gold">Ahmedabad</span>
               </motion.h1>
               
