@@ -279,6 +279,11 @@ const servicesSchema = [
     description: "Fingerprint and face recognition attendance systems installation and maintenance for offices and businesses.",
     url: "https://rudraenterprise.lovable.app/services#biometric"
   }),
+  createServiceSchema({
+    name: "Annual Maintenance Contracts in Ahmedabad",
+    description: "Yearly AMC plans for business computers, servers, CCTV systems and network hardware with scheduled maintenance and priority repair support.",
+    url: "https://rudraenterprise.lovable.app/services#amc"
+  }),
   createFAQSchema([
     { question: "How long does laptop repair take?", answer: "Most laptop repairs are completed within 24-48 hours. Same-day service is available for common issues like screen replacement and virus removal." },
     { question: "Do you provide on-site repair services?", answer: "Yes, we offer on-site repair services for CCTV installation, networking setup, and select repair services throughout Ahmedabad." },
