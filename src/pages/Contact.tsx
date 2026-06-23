@@ -70,6 +70,7 @@ const serviceOptions = [
   "Networking & Servers",
   "Biometric Systems",
   "Hardware / Printer Purchase",
+  "Annual Maintenance Contract (AMC)",
   "IT Advising (B2B/B2C)",
   "Other",
 ];

@@ -11,7 +11,8 @@ import {
   Package,
   Wrench,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  FileCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/layout/Layout";
@@ -26,6 +27,7 @@ import biometricImg from "@/assets/service-biometric.jpg";
 import hardwareImg from "@/assets/service-hardware.jpg";
 import softwareImg from "@/assets/service-software.jpg";
 import customBuildImg from "@/assets/service-custom-build.jpg";
+import amcImg from "@/assets/service-amc.jpg";
 
 const serviceImages: Record<string, string> = {
   "laptop-desktop": laptopImg,
@@ -37,6 +39,7 @@ const serviceImages: Record<string, string> = {
   biometric: biometricImg,
   hardware: hardwareImg,
   software: softwareImg,
+  amc: amcImg,
 };
 
 const fadeInUp = {
@@ -208,6 +211,23 @@ const services = [
     price: "Varies by product",
     turnaround: "Same day installation",
   },
+  {
+    id: "amc",
+    icon: FileCheck,
+    title: "Annual Maintenance Contracts",
+    shortDesc: "Yearly AMC plans for computers, servers, and CCTV systems.",
+    description: "Protect your business IT with our annual maintenance contracts. We cover computers, servers, CCTV and network hardware with scheduled servicing, priority repairs and dedicated support.",
+    features: [
+      "Computers & laptops AMC",
+      "Servers & networking AMC",
+      "CCTV systems AMC",
+      "Scheduled preventive maintenance",
+      "Priority repair support",
+      "On-site service visits",
+    ],
+    price: "Custom quote",
+    turnaround: "Yearly contract",
+  },
 ];
 
 const servicesSchema = [
@@ -259,6 +279,11 @@ const servicesSchema = [
     description: "Fingerprint and face recognition attendance systems installation and maintenance for offices and businesses.",
     url: "https://rudraenterprise.lovable.app/services#biometric"
   }),
+  createServiceSchema({
+    name: "Annual Maintenance Contracts in Ahmedabad",
+    description: "Yearly AMC plans for business computers, servers, CCTV systems and network hardware with scheduled maintenance and priority repair support.",
+    url: "https://rudraenterprise.lovable.app/services#amc"
+  }),
   createFAQSchema([
     { question: "How long does laptop repair take?", answer: "Most laptop repairs are completed within 24-48 hours. Same-day service is available for common issues like screen replacement and virus removal." },
     { question: "Do you provide on-site repair services?", answer: "Yes, we offer on-site repair services for CCTV installation, networking setup, and select repair services throughout Ahmedabad." },
@@ -271,8 +296,8 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="IT, Repair & CCTV Services Ahmedabad | Rudra Enterprise"
-        description="Laptop & desktop repair, custom PC builds, software licensing, CCTV, data recovery, networking and printers in Ahmedabad. 30-day warranty."
+        title="IT, Repair, CCTV & AMC Services Ahmedabad | Rudra Enterprise"
+        description="Laptop & desktop repair, custom PC builds, software licensing, CCTV, data recovery, networking, printers and annual maintenance contracts in Ahmedabad. 30-day warranty."
         canonical="/services"
         schema={servicesSchema}
       />
@@ -297,14 +322,14 @@ const Services = () => {
               variants={fadeInUp}
               className="text-4xl md:text-5xl font-montserrat font-bold text-foreground mb-6"
             >
-              IT Sales, Repair & Security Services in{" "}
+              IT Sales, Services, Repair & Surveillance in{" "}
               <span className="text-gradient-gold">Ahmedabad</span>
             </motion.h1>
             <motion.p
               variants={fadeInUp}
               className="text-xl text-muted-foreground"
             >
-              B2B and B2C IT sales, repair, advising, networking, custom builds, software and security. One trusted partner for it all.
+              B2B and B2C IT sales, services, repair, advising, networking, custom builds, software, CCTV and annual maintenance contracts. One trusted partner for it all.
             </motion.p>
           </motion.div>
         </div>
