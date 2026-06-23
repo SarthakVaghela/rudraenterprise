@@ -49,8 +49,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    content: "info@rudraenterprise.in",
-    link: "mailto:info@rudraenterprise.in",
+    content: "info@rudracomputers.com",
+    link: "mailto:info@rudracomputers.com",
   },
   {
     icon: Clock,

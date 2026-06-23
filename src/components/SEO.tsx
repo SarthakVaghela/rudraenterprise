@@ -70,7 +70,7 @@ export const localBusinessSchema = {
   "description": "Professional computer repair, laptop repair, CCTV installation, data recovery, and IT services in Ahmedabad, Gujarat. Serving Vejalpur, Jodhpur, Satellite, and nearby areas.",
   "url": "https://rudraenterprise.lovable.app",
   "telephone": "+919426322123",
-  "email": "info@rudraenterprise.in",
+  "email": "info@rudracomputers.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "A-238, Shreyash Complex, Near Vejalpur Bus Stand",
