@@ -211,6 +211,23 @@ const services = [
     price: "Varies by product",
     turnaround: "Same day installation",
   },
+  {
+    id: "amc",
+    icon: FileCheck,
+    title: "Annual Maintenance Contracts",
+    shortDesc: "Yearly AMC plans for computers, servers, and CCTV systems.",
+    description: "Protect your business IT with our annual maintenance contracts. We cover computers, servers, CCTV and network hardware with scheduled servicing, priority repairs and dedicated support.",
+    features: [
+      "Computers & laptops AMC",
+      "Servers & networking AMC",
+      "CCTV systems AMC",
+      "Scheduled preventive maintenance",
+      "Priority repair support",
+      "On-site service visits",
+    ],
+    price: "Custom quote",
+    turnaround: "Yearly contract",
+  },
 ];
 
 const servicesSchema = [
