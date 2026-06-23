@@ -296,8 +296,8 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="IT, Repair & CCTV Services Ahmedabad | Rudra Enterprise"
-        description="Laptop & desktop repair, custom PC builds, software licensing, CCTV, data recovery, networking and printers in Ahmedabad. 30-day warranty."
+        title="IT, Repair, CCTV & AMC Services Ahmedabad | Rudra Enterprise"
+        description="Laptop & desktop repair, custom PC builds, software licensing, CCTV, data recovery, networking, printers and annual maintenance contracts in Ahmedabad. 30-day warranty."
         canonical="/services"
         schema={servicesSchema}
       />
