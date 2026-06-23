@@ -14,10 +14,10 @@ const SEO = ({
   description, 
   canonical, 
   type = "website",
-  image = "https://rudraenterprise.lovable.app/og-image.jpg",
+  image = "https://rudracomputers.com/og-image.jpg",
   schema
 }: SEOProps) => {
-  const siteUrl = "https://rudraenterprise.lovable.app";
+  const siteUrl = "https://rudracomputers.com";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
 
 
@@ -64,11 +64,11 @@ export default SEO;
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://rudraenterprise.lovable.app/#business",
+  "@id": "https://rudracomputers.com/#business",
   "name": "Rudra Enterprise",
   "alternateName": "Rudra Enterprise Computer Repair",
   "description": "Professional computer repair, laptop repair, CCTV installation, data recovery, and IT services in Ahmedabad, Gujarat. Serving Vejalpur, Jodhpur, Satellite, and nearby areas.",
-  "url": "https://rudraenterprise.lovable.app",
+  "url": "https://rudracomputers.com",
   "telephone": "+919426322123",
   "email": "info@rudracomputers.com",
   "address": {
@@ -104,7 +104,7 @@ export const localBusinessSchema = {
   "sameAs": [
     "https://wa.me/919426322123"
   ],
-  "image": "https://rudraenterprise.lovable.app/og-image.jpg",
+  "image": "https://rudracomputers.com/og-image.jpg",
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.8",
@@ -128,7 +128,7 @@ export const createServiceSchema = (service: {
   "provider": {
     "@type": "LocalBusiness",
     "name": "Rudra Enterprise",
-    "@id": "https://rudraenterprise.lovable.app/#business"
+    "@id": "https://rudracomputers.com/#business"
   },
   "areaServed": {
     "@type": "City",
@@ -168,7 +168,7 @@ export const createProductSchema = (product: {
   "@type": "Product",
   "name": product.name,
   "description": product.description,
-  "image": product.image || "https://rudraenterprise.lovable.app/og-image.jpg",
+  "image": product.image || "https://rudracomputers.com/og-image.jpg",
   "offers": {
     "@type": "Offer",
     "price": product.price,
@@ -190,6 +190,6 @@ export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
     "@type": "ListItem",
     "position": index + 1,
     "name": item.name,
-    "item": `https://rudraenterprise.lovable.app${item.url}`
+    "item": `https://rudracomputers.com${item.url}`
   }))
 });

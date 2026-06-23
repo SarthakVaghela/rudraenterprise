@@ -102,7 +102,7 @@ const contactSchema = [
     "@type": "ContactPage",
     "name": "Contact Rudra Enterprise - Computer Repair in Ahmedabad",
     "description": "Contact Rudra Enterprise for computer repair, laptop repair, CCTV installation, and IT services in Ahmedabad. Visit our shop in Vejalpur or call +91 94263 22123.",
-    "url": "https://rudraenterprise.lovable.app/contact"
+    "url": "https://rudracomputers.com/contact"
   }
 ];
 

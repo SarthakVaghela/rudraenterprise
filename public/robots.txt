@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://rudraenterprise.lovable.app/sitemap.xml
+Sitemap: https://rudracomputers.com/sitemap.xml

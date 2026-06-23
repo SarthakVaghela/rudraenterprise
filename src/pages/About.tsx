@@ -96,10 +96,10 @@ const aboutSchema = [
     "@type": "AboutPage",
     "name": "About Rudra Enterprise - Computer Repair Experts in Ahmedabad",
     "description": "Learn about Rudra Enterprise, Ahmedabad's trusted computer repair and CCTV installation company. 8+ years experience, 5000+ devices repaired, certified technicians.",
-    "url": "https://rudraenterprise.lovable.app/about",
+    "url": "https://rudracomputers.com/about",
     "mainEntity": {
       "@type": "LocalBusiness",
-      "@id": "https://rudraenterprise.lovable.app/#business"
+      "@id": "https://rudracomputers.com/#business"
     }
   }
 ];
